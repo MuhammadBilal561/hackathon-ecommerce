@@ -16,7 +16,7 @@ return (
     {
 <div className="grid-cols-3 grid-rows-2 mt-10 lg:grid gap-x-3 gap-y-5 justify-evenly" >{result.map(
     (product)=>(
-        <div className="">
+        <div key={product.id}>
         <ProductCard
          key={product.id}
          title={ product.name}

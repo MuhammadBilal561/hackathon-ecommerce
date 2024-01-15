@@ -37,7 +37,7 @@ height={500}   />
 {
     sizes.map((item)=>{
         return(
-            <button className="flex items-center justify-center w-12 h-12 text-sm font-bold text-gray-500 rounded-full hover:bg-slate-50">
+            <button key={item} className="flex items-center justify-center w-12 h-12 text-sm font-bold text-gray-500 rounded-full hover:bg-slate-50">
     
 {item}
             </button>
