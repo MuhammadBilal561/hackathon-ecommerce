@@ -8,7 +8,7 @@ const PromotionSection = () => {
   return (
     <>
 
-<div className='mb-8'>
+<div className='mb-8 '>
       <div className='items-center text-sm font-bold text-blue-600 justify-evenly mt-60 lg:grid sm:grid'>
       PROMOTIONS
       </div>
@@ -20,12 +20,12 @@ const PromotionSection = () => {
        
   <div className='' >
 
-<div className='flex '>
-    <h1 className='text-3xl font-bold bg-gray-300 max-h-52 '>GET UP <br />TO 60%</h1>
+<div className='lg:flex  md:grid'>
+    <h1 className='text-3xl font-bold bg-gray-300 max-h-52  '>GET UP <br />TO 60%</h1>
     <p className='grid p-1 pt-20 text-xl bg-gray-300 max-h-52'>For the <br /> summer <br />  season</p>
     <div>
 <Image
-className='bg-gray-300 w-72 h-52 '
+className='bg-gray-300 w-96   h-52 '
 src={event1}
 alt='event1'
 
@@ -35,16 +35,18 @@ alt='event1'
 </div>
 </div>
 
-<div className='grid justify-around h-40 mt-4 bg-black '>
-    <div className='grid justify-between'>
-    <h3 className='mt-6 text-4xl font-bold text-white'>GET 30% Off</h3>
-    <p className='ml-8 text-white text-md'>USE PROMO CODE</p>
-    <button className='h-12 px-24 ml-1 font-bold text-white bg-gray-500 rounded-md'>DINEWEEKENDSALE</button>
+<div className='bg-black py-1  mt-2 lg:w-full '>
+<div className='grid  lg:w-11/12    h-40 mt-4 bg-black justify-center  '>
+    <div className='grid  '>
+    <h3 className='mt-2 text-4xl font-bold text-white lg:text-center  md:text-left'>GET 30% Off</h3>
+    <p className=' text-white text-md lg:text-center md:text-left'>USE PROMO CODE</p>
+    <button className='h-9 mb-1 lg:px-10 md:px-2 font-bold text-white bg-gray-500 rounded-md'>DINEWEEKENDSALE</button>
+</div>
 </div>
 </div>
   </div>
 
- <div className='flex gap-x-4 flex-row-2 '>
+ <div className='flex gap-x-4 flex-row-2 mt-2 '>
  <div className='bg-orange-100 max-w-96 max-h-96 '>
     <p className='font-semibold'>Flex Sweatshirt</p>
     <p className='font-semibold'>$100.00 $75.00</p>

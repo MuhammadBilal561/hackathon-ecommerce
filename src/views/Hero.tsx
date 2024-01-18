@@ -16,8 +16,10 @@ import HeroFotter from './HeroFotter';
 
 
 const Hero = () => {
+
+
   return (
-    <section className='flex flex-col px-8 py-6 gap-y-10 lg:flex-row'>
+    <section className='flex flex-col px-8 py-6 gap-y-10 lg:flex-row '>
 
         <div className='flex-1' >
             {/* Left div */}
@@ -31,7 +33,7 @@ An Industrial Take on Streetwear
      <div> <Button className='h-12 px-8 mx-10 mt-8 bg-black gap-x-1'> <ShoppingCart />Start Shopping </Button>
      
       </div>
-      <div className='flex mt-10 mr-10 text-gray-300 gap-x-4 '>
+      <div className='flex  mt-10  text-gray-300 justify-evenly gap-x-2 '>
       <Image
                src={brand1}
                alt='Brand Image'
