@@ -3,6 +3,7 @@ import Image from 'next/image'
 import fotterimage from "@/assets/about/1.png"
 // import { Button } from "@/components/ui/button"
 // import { Input } from "@/components/ui/input"
+import Link from 'next/link'
 
 
 const HeroFotter = () => {
@@ -10,7 +11,7 @@ const HeroFotter = () => {
     <div>
       <div className=''>
  <h1 className='flex justify-end mr-12 text-5xl font-extrabold mt-28'>Unique and <br /> Authentic Vintage <br /> Designer Jewellery</h1>
-<div className='mb-32 lg:flex justify-evenly sm:gap-x-10'>
+<div className=' lg:flex justify-evenly sm:gap-x-10'>
 <div className='grid'>
 <div>
     <h3 className='mt-6 text-lg font-bold '>Using Good <br /> Quality Materials</h3>
@@ -51,7 +52,8 @@ alt='fotter image'
        100% traceable.
        <br />
 
-       <button className='px-6 py-3 mt-6 text-white bg-black'>See All <br /> Product</button>
+       <Link href= {'/products'}>
+       <button className='px-6 py-3 mt-6 text-white bg-black'>See All <br /> Product</button></Link>
 
        </h3>
 

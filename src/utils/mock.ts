@@ -2,7 +2,7 @@
 import P1 from'@/assets/products/1.png';
 import P2 from'@/assets/products/Image 2.png'
 import P3 from'@/assets/products/3.png'
-import P4 from'@/assets/products/3.png'
+import P4 from'@/assets/products/4.png'
 import P5 from'@/assets/products/5.png'
 import P6 from'@/assets/products/6.png'
 import P7 from'@/assets/products/7.png'

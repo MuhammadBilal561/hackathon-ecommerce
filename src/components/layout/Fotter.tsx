@@ -9,7 +9,7 @@ import { FaFacebookF,FaLinkedinIn,FaTwitter } from "react-icons/fa";
 const Fotter = () => {
   return (
     <>
-    <div className='ml-3 text-xl lg:flex gap-x-28 sm:grid md:grid'>
+    <div className='ml-3 text-xl lg:flex gap-x-28 sm:grid md:grid '>
 
     <div className='mt-20 ml-14 '>
 
@@ -78,10 +78,9 @@ const Fotter = () => {
    <div className='text-lg font-semibold text-gray-500 lg:flex justify-evenly '>
 
      
-   <p >Copyright © 2022 Dine Market</p>
-   <p>Design by.  M.Bilal</p>
-   <p>Code by.  M.Bilal 561 on github</p>
-   </div>
+   <p className='lg:grid md:flex'>Copyright © 2024 <span> Dine Market</span></p>
+   <h3 className='lg:grid md:flex ' >Design by. <span className='font-bold text-black'>M.Bilal </span></h3>
+   <h3 className='lg:grid md:flex'>Code by. <span className='font-bold text-black '>M.Bilal 561 on Github </span></h3>   </div>
 
 
 

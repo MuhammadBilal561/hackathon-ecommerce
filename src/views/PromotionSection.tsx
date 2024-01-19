@@ -7,76 +7,69 @@ import Image from 'next/image'
 const PromotionSection = () => {
   return (
     <>
-
-<div className='mb-8 '>
-      <div className='items-center text-sm font-bold text-blue-600 justify-evenly mt-60 lg:grid sm:grid'>
-      PROMOTIONS
-      </div>
-      <p className="container flex justify-center px-8 pl-5 mt-1 mb-10 text-4xl font-bold">
-      Our Promotions Events
+    <div className="flex flex-col ">
+      <p className="text-blue-600 font-bold text-md text-center pt-10">
+        PROMOTIONS
       </p>
+      <h2 className="text-gray-900  text-center text-2xl  md:text-4xl py-2 font-bold">
+        Our Promotions Events
+      </h2>
+      <div className=" flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 px-2 lg:px-10 pt-6 justify-center items-stretch">
+        <div className=" flex flex-col justify-between lg:w-2/5 ">
+          <div className="bg-[#d6d6d8] flex flex-col flex-grow md:flex-row pt-5 md:pt-0 items-center px-5 md:justify-center ">
+            <div>
+              <p className="text-2xl text-black font-bold">
+                GET UP TO <br /> <span className="text-4xl">60%</span>{" "}
+              </p>
+              <p className="text-lg font-semibold text-[#232323] pt-2">
+                For the summer season
+              </p>
+            </div>
+            <div>
+              <Image src={event1} alt="" className='mt-10'>
+
+              </Image>
+            </div>
+          </div>
+          <div className="bg-black text-white text-center py-10 mt-4 md:px-0 flex flex-col flex-grow">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+              GET 30% Off
+            </h2>
+            <p className="text-md py-4">USE PROMO CODE</p>
+            <button className="tracking-widest bg-gray-700 px-10 md:px-16 w-fit mx-auto py-2 border border-transparent rounded-lg font-bold items-center">
+              DINEWEEKENDSALE
+            </button>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 lg:w-3/5 py-4 md:py-0 ">
+          <div className="bg-orange-100  flex flex-grow flex-col justify-between  md:pt-10">
+            <div>
+              <p className="text-md md:pl-2 text-center md:text-left pt-3 md:pt-0">
+                Flex Sweatshirt
+              </p>
+              <p className="text-md md:text-lg md:pl-2 text-center md:text-left pt-3 md:pt-0 ">
+                <span className="line-through"> $100.00 </span>{" "}
+                <span className="font-semibold ml-2">$75.00</span>{" "}
+              </p>
+            </div>
+            <Image src={event2} alt="" className="mx-auto"></Image>
+          </div>
+          <div className="bg-gray-200 flex flex-grow flex-col justify-between  md:pt-10 ">
+            <div>
+              <p className=" text-md md:pl-2 text-center md:text-left pt-3 md:pt-0">
+                Flex Push Button Bomber
+              </p>
+              <p className="text-md md:text-lg md:pl-2 text-center md:text-left pt-3 md:pt-0 ">
+                <span className="line-through"> $225.00 </span>{" "}
+                <span className="font-semibold ml-2">$190.00</span>{" "}
+              </p>
+            </div>
+            <Image src={event3} alt="" className="mx-auto"></Image>
+          </div>
+        </div>
       </div>
-    <div className='container min-h-screen lg:flex justify-evenly sm:grid '>
-       
-  <div className='' >
-
-<div className='lg:flex  md:grid'>
-    <h1 className='text-3xl font-bold bg-gray-300 max-h-52  '>GET UP <br />TO 60%</h1>
-    <p className='grid p-1 pt-20 text-xl bg-gray-300 max-h-52'>For the <br /> summer <br />  season</p>
-    <div>
-<Image
-className='bg-gray-300 w-96   h-52 '
-src={event1}
-alt='event1'
-
-
-/>
-
-</div>
-</div>
-
-<div className='bg-black py-1  mt-2 lg:w-full '>
-<div className='grid  lg:w-11/12    h-40 mt-4 bg-black justify-center  '>
-    <div className='grid  '>
-    <h3 className='mt-2 text-4xl font-bold text-white lg:text-center  md:text-left'>GET 30% Off</h3>
-    <p className=' text-white text-md lg:text-center md:text-left'>USE PROMO CODE</p>
-    <button className='h-9 mb-1 lg:px-10 md:px-2 font-bold text-white bg-gray-500 rounded-md'>DINEWEEKENDSALE</button>
-</div>
-</div>
-</div>
-  </div>
-
- <div className='flex gap-x-4 flex-row-2 mt-2 '>
- <div className='bg-orange-100 max-w-96 max-h-96 '>
-    <p className='font-semibold'>Flex Sweatshirt</p>
-    <p className='font-semibold'>$100.00 $75.00</p>
-    <Image 
-    className=''
-    src={event2}
-    alt='event2'
-    height={334}
-    />
-  </div>
-
-  <div className='bg-gray-200 max-w-80 max-h-96 '>
-    <p className='font-semibold'>Flex Push Button Bomber</p>
-    <p className='font-semibold'>$225.00$190.00</p>
-    <Image 
-    className=''
-    src={event3}
-    alt='event3'
-    height={334}
-    />
-  </div>
- </div>
-  
-  
-
-  
-
-
     </div>
-    </>
+  </>
   )
 }
 

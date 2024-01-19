@@ -3,6 +3,7 @@ import Quantity from "@/components/Quantity"
 import { Products } from "@/utils/mock"
 import Image  from "next/image"
 import  { StaticImageData} from "next/image"
+import AddToCart from "@/components/AddToCard"
 
 const getProductDetails=(id: string | number) =>{
 return Products.filter((product)=>product.id == id)
@@ -14,18 +15,18 @@ export default function Page({ params }: { params: { id: string }}) {
 
 const result = getProductDetails(params.id)
 return (<>
-<div className="flex justify-center ">
+<div className="lg:flex md:grid justify-center ">
 
 
     { result.map(
             (product)=>(
-           <div key={product.id} className="flex justify-center mb-20 mt-28 ">
+           <div key={product.id} className="lg:flex md:grid justify-center mb-20 mt-28 ">
 <div>
     <Image
     src={product.image}
 alt={product.name} 
-width={500}
-height={500}   />
+width={300}
+height={300}   />
 </div>
 <div className="mt-6 ml-4">
    {/* <h3 className="text-xl font-bold ">Product Details</h3>  */}
@@ -37,7 +38,7 @@ height={500}   />
 {
     sizes.map((item)=>{
         return(
-            <button key={item} className="flex items-center justify-center w-12 h-12 text-sm font-bold text-gray-500 rounded-full hover:bg-slate-50">
+            <button key={item} className="flex items-center justify-center w-12 h-12 text-sm font-bold text-gray-800 rounded-full hover:bg-slate-100">
     
 {item}
             </button>
@@ -53,9 +54,11 @@ height={500}   />
 
 </div>
 </div>
-    <p className="flex items-center justify-center text-2xl font-extrabold mt-7"> ${product.price}.00 </p>
+    <p className="flex items-center justify-center text-4xl font-extrabold mt-7"> ${product.price}.00 </p>
     {/* <p>Category: {product.category} </p> */}
-
+<div className="flex justify-center mt-4  ">
+<AddToCart  />
+</div>
 </div>
 
            </div>

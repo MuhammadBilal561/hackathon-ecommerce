@@ -1,6 +1,7 @@
 'use client'
 
-import { ShoppingCart } from 'lucide-react';
+// 
+import { FaShoppingCart } from 'react-icons/fa';
 import React from 'react'
 import Logo from "@/assets/images/Logo.webp";
 import Link from 'next/link';
@@ -8,12 +9,16 @@ import Image from 'next/image';
 import { Input } from "@/components/ui/input"
 import { useState,useEffect } from 'react';
 import { IoMenuSharp } from "react-icons/io5";
-
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/store";
 
 
 
 
 const Header = () => {
+
+  const cartValue = useSelector((state: RootState) => state.cart.totalQuantity);
+
   const[sticky, setSticky] = useState(false);
   const [open ,setOpen]=useState(false);
 
@@ -76,7 +81,8 @@ const Header = () => {
     font-medium bg-white top-0 right-0 duration-300 ${open ? 'right-0': 'right-[-100%] ' } `}>     
 
 <ul className='flex flex-col font-bold justify-center h-full gap-6  pb-72 py-1 text-lg text-black'>
-    
+
+  
     <li className='text-lg' >
       <Link href={"/category/Female"}>
       Female
@@ -109,7 +115,12 @@ const Header = () => {
    </div>
    <div className='flex items-center justify-center w-10 h-10 rounded-full bg-slate-100'>
     
-   <ShoppingCart />
+   <div className="h-10 w-10 rounded-full bg-gray-200 flex justify-center items-center relative">
+        <span className="absolute right-1 top-0 rounded-full bg-red-500 h-5 w-5 text-white text-sx text-center">
+          {cartValue}
+        </span>
+        <FaShoppingCart className="h-6 w-6" />
+      </div>
 
    </div>
    
