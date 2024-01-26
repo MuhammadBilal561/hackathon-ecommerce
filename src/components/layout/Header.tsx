@@ -77,13 +77,14 @@ const Header = () => {
     className={`text-3xl z-[999] md:hidden  ${open ? 'text-gray-700' :"text-gray-700" }`}>
     <IoMenuSharp name="menu" />
     </div>
-    <div className={`md:hidden text-gray-900 absolute w-2/3 h-screen px-7 my-3 
-    font-medium bg-white top-0 right-0 duration-300 ${open ? 'right-0': 'right-[-100%] ' } `}>     
+    <div className={`md:hidden text-gray-900 absolute  w-72 h-screen px-7 my-2 
+    font-medium bg-white top-0 duration-300 ${open ? 'right-0': 'hidden' } `}>    
 
-<ul className='flex flex-col font-bold justify-center h-full gap-6  pb-72 py-1 text-lg text-black'>
+<ul className='flex flex-col  justify-center h-full gap-10 py-2 text-lg'>
 
   
-    <li className='text-lg' >
+   <div onClick={()=>setOpen(false)} className='mb-72 gap-7 space-y-4 font-bold text-lg' >
+   <li className='text-lg' >
       <Link href={"/category/Female"}>
       Female
       </Link>
@@ -105,6 +106,7 @@ const Header = () => {
       
       All Products
       </Link></li>
+   </div>
  </ul>
      
     </div>
