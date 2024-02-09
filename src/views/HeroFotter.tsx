@@ -45,7 +45,7 @@ src={fotterimage}
 alt='fotter image'
 
 />
-<h3 className='mt-6 text-center'>This piece is ethically <br />
+<h3 className='text-center mt-7'>This piece is ethically <br />
      crafted in our small <br />
      family-owned workshop <br />
       in Peru with unmatched <br />
