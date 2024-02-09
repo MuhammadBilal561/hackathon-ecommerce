@@ -9,7 +9,7 @@ import Link from 'next/link'
 function ProductCard  (props:{title:string,price:string,img:StaticImageData,id:number ,category:string})  {
   return (
   <Link  href={`/products/${props.id}`}>
-    <div className='flex w-80 ml-16 mb-14 justify-evenly '>
+    <div className='flex lg:ml-16 md:ml-2 mb-14 justify-evenly '>
 
 <div className='relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30' >
     <Image

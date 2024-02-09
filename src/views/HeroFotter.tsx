@@ -12,18 +12,21 @@ const HeroFotter = () => {
       <div className=''>
  <h1 className='flex justify-end mr-12 text-5xl font-extrabold mt-28'>Unique and <br /> Authentic Vintage <br /> Designer Jewellery</h1>
 <div className=' lg:flex justify-evenly sm:gap-x-10'>
-<div className='grid'>
+<div className='grid '>
+<div className='flex lg:grid gap-x-10 lg:gap-x-1'>
 <div>
     <h3 className='mt-6 text-lg font-bold '>Using Good <br /> Quality Materials</h3>
     <p className='mt-3'>Lorem ipsum dolor <br /> sit amt, consectetur <br /> adipiscing elit</p>
 </div>
 <div>
-<h3 className='mt-8 text-lg font-bold '> Modern Fashion <br /> Design</h3>
+<h3 className='mt-6 text-lg font-bold '> Modern Fashion <br /> Design</h3>
     <p className='mt-3'>Lorem ipsum dolor <br /> sit amt, consectetur <br /> adipiscing elit</p>
+</div>
 </div>
 </div>
 
 <div className='grid'>
+<div className='flex lg:grid gap-x-10 lg:gap-x-1'>
 <div>
 <h3 className='mt-6 text-lg font-bold '> 100% Handmade <br /> Products</h3>
     <p className='mt-3'>Lorem ipsum dolor <br /> sit amt, consectetur <br /> adipiscing elit</p>
@@ -34,6 +37,7 @@ const HeroFotter = () => {
     <p className='mt-3'>Lorem ipsum dolor <br /> sit amt, consectetur <br /> adipiscing elit</p>
 </div>
 </div>
+</div>
 
 <Image
 className='mt-4'
@@ -41,7 +45,7 @@ src={fotterimage}
 alt='fotter image'
 
 />
-<h3 className='mt-6'>This piece is ethically <br />
+<h3 className='mt-6 text-center'>This piece is ethically <br />
      crafted in our small <br />
      family-owned workshop <br />
       in Peru with unmatched <br />

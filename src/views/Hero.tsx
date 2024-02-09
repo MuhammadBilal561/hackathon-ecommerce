@@ -39,31 +39,32 @@ An Industrial Take on Streetwear
       </Link>
      
       </div>
-      <div className='flex  mt-10  text-gray-300 justify-evenly gap-x-2 '>
+      <div className='flex mt-10 text-gray-300 justify-evenly gap-x-2 opacity-30 '>
       <Image
                src={brand1}
                alt='Brand Image'
-               width={80}
-               height={80}
+               width={70}
+               height={70}
                />
                 <Image
                src={brand2}
                alt='Brand Image'
-               width={80}
-               height={80}
+               width={70}
+               height={70}
                
                />
                 <Image
                src={brand3}
                alt='Brand Image'
-               width={80}
-               height={80}
+               width={70}
+               height={70}
                />
                 <Image
                src={brand4}
                alt='Brand Image'
-               width={80}
-               height={80}
+               width={70}
+               height={70}
+               
                />
            
 
